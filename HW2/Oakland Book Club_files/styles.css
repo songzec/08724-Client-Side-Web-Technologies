@@ -1,0 +1,175 @@
+header
+{
+	background-color: rgb(100,100,100);
+	text-align:center;
+	padding: 0.5em;
+	width: 100%;
+}
+
+h1
+{
+	font-size: 2em;
+	color: white !important;
+}
+
+h2
+{
+	font-size: 1.5em;
+	color: rgb(185,85,25) !important;
+}
+
+body
+{
+	display: flex;
+	font-family: Helvetica, Arial, sans-serif;
+	color: black;
+}
+
+main
+{
+	padding: 0.8em;
+}
+
+main a:link, main a:visited
+{
+	text-decoration: none;
+	color: blue !important;
+}
+
+main a:hover
+{
+	text-decoration: underline;
+	color: blue;
+}
+
+div[class="reading-dog"]
+{
+	margin: 0.5em;
+	background-image:url(reading_dog.jpg); 
+}
+
+nav
+{
+	list-style: none !important;
+	background-color: rgb(180,180,180);
+}
+
+nav a:link, a:visited
+{
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover
+{
+	text-decoration: underline;
+	color: white !important;
+}
+
+nav li
+{
+	list-style: none;
+	padding: 0.5em !important;
+}
+body main
+{
+	background-color: rgb(220,220,220);
+}
+
+blockquote p
+{
+	font-style: italic;
+}
+
+footer
+{
+	background-color: rgb(100, 100, 100);
+	color: white;
+	text-align:center;
+	width: 100%;
+	padding: 0.5em;
+}
+
+@media screen and (min-width: 601px) {
+            nav {
+                flex: 1;
+                order: 2;
+            }
+            main {
+                flex: 3;
+                order: 3;
+            }
+            footer {
+                order: 4;
+            }
+            body {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    main, nav {
+        width: 100%;
+    }
+}
+
+input[type="submit"], input[type="reset"]
+{
+	padding: 0.5em;
+	background-color: rgb(100,100,100);
+	color: white;
+}
+
+.required
+{
+	color: red;
+}
+
+thead
+{
+	text-align: left;
+	color: white;
+	background: linear-gradient(180deg, rgb(100,100,100), black);
+}
+
+
+tr td:nth-of-type(1), tr td:nth-of-type(2)
+{
+	text-align: left;
+}
+
+tr td:nth-of-type(3), tr td:nth-of-type(4)
+{
+	text-align: right;
+}
+
+tbody tr:nth-child(2n+1)
+{
+	background: rgb(197,217,241);
+}
+
+tbody tr:nth-child(2n)
+{
+	background: white;
+}
+
+tbody tr:hover
+{
+	transition-duration: 2s;
+	background: yellow;
+}
+
+th, td, div
+{
+	padding: 0.5em;
+}
+
+table, td, th
+{
+	border-collapse: collapse;
+	border: 1px solid rgb(184,204,228);
+}

@@ -1,0 +1,35 @@
+#title {
+	text-align: center;
+	font-family: Helvetica;
+}
+
+#accordion {
+	display: inline-block;
+	float: left;
+	width: calc(50% - 20px);
+	margin: 10px;
+}
+
+#slide {
+	display: inline-block;
+	float: right;
+	width: calc(50% - 20px);
+	margin: 10px;
+}
+
+#img {
+	float: right;
+	width: 100%
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#breed-name {
+	color: rgb(50,100,200);
+
+}
+h3 {
+	color: red;
+}

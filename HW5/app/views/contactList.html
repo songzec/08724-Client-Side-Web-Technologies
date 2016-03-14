@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" ng-app="contactApp">
+<head>
+    <meta charset="UTF-8">
+    <title>List Contacts</title>
+</head>
+<body>
+
+<body ng-controller="contactListController">
+    <table id="listTable" class="test">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        </thead>
+
+        <tbody ng-cloak ng-show="datas.length > 0">
+	        <tr ng-repeat="person in datas">
+	            <td>
+	            <span ng-click="removePerson(person.firstName + person.lastName)"><a href="http://localhost:8000/#!/">DELETE</a></span>
+	            </td>
+	            <td><a style="cursor: pointer;" ng-click="showDetails(person.firstName + person.lastName)">{{ person.firstName + " " + person.lastName}}</a></td>
+	            <td>{{ person.email }}</td>
+                <td>{{ person.phone }}</td>
+	        </tr>
+        </tbody>
+    </table>
+    <button onclick="location.href='http://localhost:8000/#!/contact'">Add Contact</button>
+    
+</body>
+</html>

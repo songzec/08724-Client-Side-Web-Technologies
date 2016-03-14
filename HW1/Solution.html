@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-US">
+ 	<head>
+		<title>Oakland Book Club</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<img src="reading_dog.jpg" alt="a picture of dog">
+		<section>
+		<h1>Oakland Book Club</h1>
+
+			<section>
+				<h2>What We Are Reading Now</h2>
+				<table border="1">
+				<tr>
+					<td>Title</td>
+					<td>Author</td>
+					<td>ISBN</td>
+				</tr>
+				<tr>
+					<td>The Catcher in the Rye</td>
+					<td>J.D.Salinger</td>
+					<td><a target= "_blank" href="http://www.amazon.com/Catcher-Rye-J-D-Salinger/dp/0316769487/">0316769487</a></td>
+				</tr>
+				<tr>
+					<td>The Great Gatsby</td>
+					<td>F.Scott Fitzgerald</td>
+					<td><a target= "_blank" href="http://www.amazon.com/The-Great-Gatsby-Scott-Fitzgerald/dp/0743273567/">0743273567</a></td>
+				</tr>
+				<tr>
+					<td>A Separate Peace</td>
+					<td>John Knowles</td>
+					<td><a target= "_blank" href="http://www.amazon.com/A-Separate-Peace-John-Knowles/dp/0743253973/">0743253973</a></td>
+				</tr>
+				</table>
+			</section>
+
+			<section>
+				<h2>Our Favorite Genres</h2>
+				<p>We recently conducted a poll among our members and found out what our favorite book genres are. Here are the results:</p>
+
+				<svg width="900" height="800">
+					<rect width="900" height="800" style="fill:rgb(150,150,150);stroke-width:3;stroke:rgb(0,0,0)"/>
+
+					<path d="M400,400 v-200 a200,200 0 0,0 -161.80339887498948482045868343656,317.55705045849462583374119092781 z" fill="green" stroke="black" stroke-width="2" />
+					<text x="90" y="225" fill="green" font-size="30">Sci-Fi(35%)</text>
+
+					<path d="M400,400 v200 a200,200 0 0,1 -161.80339887498948482045868343656,-82.442949541505374166258809072185 z" fill="blue" stroke="black" stroke-width="2" />
+					<text x="90" y="575" fill="blue" font-size="30">Humor(15%)</text>
+
+					<path d="M400,400 v200 a200,200 0 0,0 200,-200 z" fill="yellow" stroke="black" stroke-width="2" />
+					<text x="550" y="575" fill="yellow" font-size="30">Mystery(25%)</text>
+
+					<path d="M400,400 h200 a200,200 0 0,0 -9.7886967409692855767121333241236,-61.803398874989484820458683436564 z" fill="purple" stroke="black" stroke-width="2" />
+					<text x="650" y="375" fill="purple" font-size="30">Other(5%)</text>
+
+					<path d="M400,400 v-200 a200,200 0 0,1 190.21130325903071442328786667588,138.19660112501051517954131656344 z" fill="red" stroke="black" stroke-width="2" />
+					<text x="550" y="250" fill="red" font-size="30">Biographies(20%)</text>
+
+				</svg>
+
+			</section>
+
+			<section>
+				<h2>About Us</h2>
+				<p>We are a group of diverse individuals who all share one common trait - the love of a good book! If you also love good books, why don't you consider joining our group? Some of the benefits to joining are:</p>
+
+				<ul>
+					<li>You get to read lots of great books!</li>
+					<li>You get to meet new and interesting people</li>
+					<li>You get to visit lots of different locations in beautiful Oakland!</li>
+				</ul>
+
+				<p>For more information please contact Pauline using the following information or fill out the form at the bottom of the page:</p>
+
+				<p>
+					Pauline Smith<br>
+					Oakland Book Club Director<br>
+					9876 Forbes Avenue<br>
+					Pittsburgh, PA 15213<br>
+					(412) 998-5454<br>
+				</p>
+			</section>
+
+			<section>
+				<h2>Contact Us</h2>
+				<form name="userInfoForm" action="http://csw08724.appspot.com/hw1.do" method="post">
+					<fieldset>
+		    			<legend>
+		      				Your Information
+		    			</legend>
+		    			<div>
+		    				<label>Name*:&nbsp;
+			    				<input type="text" autofocus="autofocus" name="name" required="required" placeholder="Joe Smith">
+			   				</label>
+						</div>
+		    			<div>
+		    				<label>Phone#:&nbsp;
+		    					<input type="text" name="phone">
+			   				</label>
+						</div>
+		    			<div>
+		    				<label>Email*:&nbsp;
+		    					<input type="email" name="email" required="required" placeholder="joe.smith@foo.com">
+			   				</label>
+						</div>
+						<div>
+							<label>How did you hear about us?:&nbsp;</label>
+							<select name="howheard">
+								<option value="Website">Website</option>
+								<option value="Friend">Friend/Relative</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+						<input type="submit" value="Submit Form">
+						<input type="reset" value="Reset Form">
+					</fieldset>
+				</form>
+			</section>
+		</section>
+	</body>
+</html>
